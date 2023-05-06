@@ -442,7 +442,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc8d845e4d1fee4cab4f2b18463dea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultiplier: 50
+  forceMultiplier: 35
+  stopThreshold: 1
+  damping: 0.5
   directionLine: {fileID: 393312715}
 --- !u!120 &393312715
 LineRenderer:
