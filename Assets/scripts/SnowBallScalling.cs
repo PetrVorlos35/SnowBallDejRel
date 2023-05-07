@@ -40,7 +40,7 @@ public class SnowBallScalling : MonoBehaviour
     {
         while (snowball.transform.localScale.x < 10f)
         {
-            float growthRate = baseGrowthRate / snowball.transform.localScale.x;
+            float growthRate = baseGrowthRate / snowball.transform.localScale.x / 10;
             snowball.transform.localScale += new Vector3(growthRate, growthRate, 0f) * 0.5f;
             yield return new WaitForSeconds(0.3f);
         }
