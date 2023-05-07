@@ -2,6 +2,7 @@ using Mono.Cecil.Cil;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Finish : MonoBehaviour
 {
@@ -13,9 +14,18 @@ public class Finish : MonoBehaviour
         var player = collider.GetComponent<PlayerMovement>();
         if (player != null)
         {
-            Destroy(player.gameObject);
-            this.gameObject.SetActive(false);
-            snowman.SetActive(true);
+            Vector3 scale = player.transform.localScale;
+            if (Mathf.Abs(scale.x) < 0.7f && Mathf.Abs(scale.y) < 0.7f)
+            {
+                Destroy(player.gameObject);
+                this.gameObject.SetActive(false);
+                snowman.SetActive(true);
+            }
+
+        }
+        else
+        {
+            Debug.Log("Špatná velikost koule");
         }
     }
 }

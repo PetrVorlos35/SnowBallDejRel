@@ -527,6 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 476bac3a5b1240940885e10c327a42c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snowman: {fileID: 1448067965}
 --- !u!4 &587425321 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 854395645487211409, guid: 16f1afcb981147b41b3bb59fc32fe767, type: 3}
