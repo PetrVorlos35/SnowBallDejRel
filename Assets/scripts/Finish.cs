@@ -27,7 +27,7 @@ public class Finish : MonoBehaviour
         if (player != null)
         {
             Vector3 scale = player.transform.localScale;
-            if (Mathf.Abs(scale.x) < 0.7f && Mathf.Abs(scale.y) < 0.7f)
+            if ((Mathf.Abs(scale.x) < 0.7f && Mathf.Abs(scale.y) < 0.7f) && (Mathf.Abs(scale.x) > 0.4f && Mathf.Abs(scale.y) > 0.4f))
             {
                 Time.timeScale = 0;
                 this.gameObject.SetActive(false);
