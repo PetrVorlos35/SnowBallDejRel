@@ -19,8 +19,6 @@ public class Finish : MonoBehaviour
         WinScreen.enabled = false;
         LooseScreen.enabled = false;
     }
-
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
         var player = collider.GetComponent<PlayerMovement>();
